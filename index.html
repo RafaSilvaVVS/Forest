@@ -71,9 +71,9 @@
   </section>
   <article class="my-8  bg-green-800">
     <div class=" max-w-[1300px] py-8 mx-auto">
-      <div>
+      <div class="my-4">
         <p class="text-green-400 uppercase text-center mb-4 pt-4">Conecte-se com a natureza</p>
-        <h2 class="text-6xl text-white font-serif text-center">Cada Som, Cada Momento, Uma Nova Descoberta</h2>
+        <h2 class="text-6xl text-white font-serif text-center">Cada Som, Cada Momento,<br> Uma Nova Descoberta</h2>
       </div>
       <div class="flex gap-10 my-8 *:flex-[1] justify-center">
         <div class="bg-green-700 px-8 py-6 rounded-2xl">
@@ -110,6 +110,47 @@
           <a class="bg-linear-to-b inline-block gap-2 mt-5 from-green-400 to-green-500 px-6 py-2 rounded-full text-[#000]  cursor-pointer " href="#">Reservar 18/08</a>
         </div>
       </div>
+    </div>
+  </article>
+  <article class="mx-auto grid grid-cols-2 gap-8 max-w-[1300px]">
+    <div class="bg-green-800 px-8 py-4 rounded-2xl">
+      <p class="text-green-400 uppercase mb-4 pt-4">Conecte-se com a natureza</p>
+      <h2 class="text-white font-serif text-5xl">Escolha sua <br>próxima aventura</h2>
+      <ul class="my-6 *:my-8 ">
+        <li>
+          <h2 class="text-white text-2xl hover:before:w-[45px] w-fit transition flex items-center gap-4 before:inline-block before:w-[30px] before:h-[8px] before:bg-green-400 before:border-[3px] before:border-[#2e462c] ">Observação noturna</h2>
+          <p class="my-2 ml-12 text-[#ccc] text-[18px]">Explore a vida selvagem em seu habitat natural sob as estrelas.</p>
+        </li>
+        <li>
+          <h2 class="text-white text-2xl w-fit flex hover:before:w-[45px] items-center gap-4 before:inline-block before:w-[30px] before:h-[8px] before:bg-green-400 before:border-[3px] before:border-[#2e462c] ">Vida selvagem</h2>
+          <p class="my-2 ml-12 text-[#ccc] text-[18px]">Observe a vida selvagem em seu habitat natural.</p>
+        </li>
+        <li>
+          <h2 class="text-white text-2xl  hover:before:w-[45px] w-fit  flex items-center gap-4 before:inline-block before:w-[30px] before:h-[8px] before:bg-green-400 before:border-[3px] before:border-[#2e462c] ">Canoagem</h2>
+          <p class="my-2 ml-12 text-[#ccc] text-[18px]">Conquiste novos horizontes com nossa equipe especializada.</p>
+        </li>
+      </ul>
+    </div>
+    <div>
+      <ul class="grid grid-cols-2 gap-4">
+        <div>
+          <li class=" mb-4 relative grid overflow-hidden rounded-2xl h-fit group">
+            <img class="rounded-2xl size-full object-cover group-hover:scale-110" src="./src/img/canoagem.jpg" alt="Canoagem">
+            <span class="absolute grid invisible group-hover:visible p-4 self-end text-white text-[20px] z-20">Canoagem</span>
+            <div class="absolute w-full invisible group-hover:visible bg-linear-to-b from-black/30 to-black/80 h-full grid top-0 rounded-2xl"></div>
+          </li>
+          <li class=" relative grid overflow-hidden rounded-2xl h-fit group">
+            <img class="rounded-2xl size-full object-cover group-hover:scale-110" src="./src/img/vida-selvagem.jpg" alt="vida selvagem">
+            <span class="absolute z-20 grid p-4 self-end text-white text-[20px]">Vida selvagem</span>
+            <div class="absolute w-full invisible group-hover:visible bg-linear-to-b from-black/30 to-black/80 h-full grid top-0 rounded-2xl"></div>
+          </li>
+        </div>
+        <li class=" relative grid overflow-hidden h-full rounded-2xl h-fit group">
+          <img class="rounded-2xl size-full object-cover group-hover:scale-110 h-full" src=" ./src/img/observacao-noturna.jpg" alt="aurora boreal">
+          <span class="absolute z-20 grid p-4 self-end text-white text-[20px]">Observação Noturna</span>
+          <div class="absolute w-full invisible group-hover:visible bg-linear-to-b from-black/30 to-black/80 h-full grid top-0 rounded-2xl"></div>
+        </li>
+      </ul>
     </div>
   </article>
 </body>
