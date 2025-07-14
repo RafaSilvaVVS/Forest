@@ -12,10 +12,10 @@
   <header class="max-w-[1300px] mx-auto my-9 flex justify-between gap-4 items-center">
     <img src="./src/img/forest.svg" alt="Forest logo">
     <ul class="flex items-center gap-5">
-      <li><a class="text-white text-[22px] relative hover:after:w-full hover:after:h-[4px] hover:after:absolute hover:after:bg-white hover:after:block block" href="#">Acomodações</a></li>
-      <li><a class="text-white text-[22px] relative hover:after:w-full hover:after:h-[4px] hover:after:absolute hover:after:bg-white hover:after:block block" href="#">Eventos</a></li>
-      <li><a class="text-white text-[22px] relative hover:after:w-full hover:after:h-[4px] hover:after:absolute hover:after:bg-white hover:after:block block" href="#">Experiências</a></li>
-      <li><a class="text-white text-[22px] relative hover:after:w-full hover:after:h-[4px] hover:after:absolute hover:after:bg-white hover:after:block block" href="#">Contato</a></li>
+      <li><a class="text-white text-[22px] relative hover:after:w-full hover:after:h-[2px] hover:after:absolute hover:after:bg-white hover:after:block block" href="#">Acomodações</a></li>
+      <li><a class="text-white text-[22px] relative hover:after:w-full hover:after:h-[2px] hover:after:absolute hover:after:bg-white hover:after:block block" href="#">Eventos</a></li>
+      <li><a class="text-white text-[22px] relative hover:after:w-full hover:after:h-[2px] hover:after:absolute hover:after:bg-white hover:after:block block" href="#">Experiências</a></li>
+      <li><a class="text-white text-[22px] relative hover:after:w-full hover:after:h-[2px] hover:after:absolute hover:after:bg-white hover:after:block block" href="#">Contato</a></li>
     </ul>
   </header>
   <main class="max-w-[1300px]  mx-auto my-14">
@@ -141,13 +141,13 @@
           </li>
           <li class=" relative grid overflow-hidden rounded-2xl h-fit group">
             <img class="rounded-2xl size-full object-cover group-hover:scale-110" src="./src/img/vida-selvagem.jpg" alt="vida selvagem">
-            <span class="absolute z-20 grid p-4 self-end text-white text-[20px]">Vida selvagem</span>
+            <span class="absolute z-20 invisible group-hover:visible grid p-4 self-end text-white text-[20px]">Vida selvagem</span>
             <div class="absolute w-full invisible group-hover:visible bg-linear-to-b from-black/30 to-black/80 h-full grid top-0 rounded-2xl"></div>
           </li>
         </div>
         <li class=" relative grid overflow-hidden h-full rounded-2xl  group">
           <img class="rounded-2xl size-full object-cover group-hover:scale-110 h-full" src=" ./src/img/observacao-noturna.jpg" alt="aurora boreal">
-          <span class="absolute z-20 grid p-4 self-end text-white text-[20px]">Observação Noturna</span>
+          <span class="absolute invisible group-hover:visible z-20 grid p-4 self-end text-white text-[20px]">Observação Noturna</span>
           <div class="absolute w-full invisible group-hover:visible bg-linear-to-b from-black/30 to-black/80 h-full grid top-0 rounded-2xl"></div>
         </li>
       </ul>
@@ -165,7 +165,7 @@
         <p class="text-[#ccc]">Desperte com o canto dos pássaros e participe das nossas caminhadas ao ar livre.</p>
         <p class="text-green-400 uppercase mb-4 text-[18px] pt-4">05:40 - 07:00</p>
       </div>
-      <div class="bg-green-800 px-6 py-8 mt-24 hover:-translate-y-8 transition-transform">
+      <div class="bg-green-800 px-6 py-8 mt-18 hover:-translate-y-8 transition-transform">
         <img class="bg-linear-to-b inline-block gap-2 mt-5 from-green-400 to-green-500 p-2 rounded-full" src="./src/img/dia.svg" alt="icone do sol ">
         <h3 class="text-white font-serif text-2xl my-5">Meio-dia</h3>
         <p class="text-[#ccc]">Explore nossas trilhas sombreadas e desfrute de um piquenique gourmet na natureza.</p>
@@ -179,6 +179,48 @@
       </div>
     </div>
   </section>
+  <article class="max-w-[1300px] mx-auto my-12 grid grid-cols-2">
+    <div>
+      <h2 class="text-green-400 text-3xl font-serif">Nosso contato</h2>
+      <p class="text-white mt-2">Tem interesse em passar uma temporada na Forest? <br>Entre em contato com a gente por telefone ou email.</p>
+
+      <ul class="my-8">
+        <li>
+          <h3 class="text-green-400 text-2xl before:block before:mb-2 before:w-[35px] before:h-[8px] before:bg-green-400 before:border-[3px] before:border-[#2e462c]  font-serif">Base</h3>
+          <span class="text-white mt-2 block">Rua da Mata,123 - Rio de Janeiro - RJ</span>
+        </li>
+        <li class="my-4">
+          <h3 class="text-green-400  text-2xl before:block before:mb-2 before:w-[35px] before:h-[8px] before:bg-green-400 before:border-[3px] before:border-[#2e462c]  font-serif">Email</h3>
+          <span class="text-white mt-2 block">Contato@forest.com</span>
+        </li>
+        <li>
+          <h3 class="text-green-400 text-2xl before:block before:mb-2 before:w-[35px] before:h-[8px] before:bg-green-400 before:border-[3px] before:border-[#2e462c]  font-serif">Telefone</h3>
+          <span class="text-white mt-2 block">47 99999-9999</span>
+        </li>
+      </ul>
+    </div>
+    <form class="bg-green-800 rounded-2xl px-8 py-8" action="POST">
+      <div>
+        <label class="text-white" for="email">Nome</label>
+        <input class="bg-green-700 w-full py-[12px] text-white focus:outline-2 focus:outline-green-500 rounded-[7px] my-2 px-4 block" type="email" name="email" id="email">
+      </div>
+      <div class="flex gap-4 max-w-[800px]">
+        <div class="w-full">
+          <label class="text-white" for="nome">Email</label>
+          <input class="bg-green-700 w-full py-[12px] text-white focus:outline-2 focus:outline-green-500 rounded-[7px] my-2 px-4 block" type="text" name="nome" id="nome">
+        </div>
+        <div class="w-full">
+          <label class="text-white" for="telefone">Telefone</label>
+          <input placeholder="(21) 99999-9999" class="bg-green-700 placeholder:text-green-800 w-full py-[12px] text-white focus:outline-2 focus:outline-green-500 rounded-[7px] my-2 px-4 block" type="text" name="telefone" id="telefone">
+        </div>
+      </div>
+      <div>
+        <label class="text-white" for="mensagem">Mensagem</label>
+        <textarea class="block resize-none text-white bg-green-700 py-[12px] w-full rounded-[7px] my-2 px-4 focus:outline-2 focus:outline-green-500" name="mensagem" rows="5" id="mensagem"></textarea>
+      </div>
+      <button class="bg-linear-to-b flex gap-2 from-green-400 to-green-500 px-6 mt-4 py-2 rounded-full text-[#333]  cursor-pointer">Enviar email</button>
+    </form>
+  </article>
 </body>
 
 </html>
