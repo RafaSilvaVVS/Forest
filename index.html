@@ -9,7 +9,7 @@
 </head>
 
 <body class="bg-green-700">
-  <header class="max-w-[1300px] mx-auto my-9 flex justify-between gap-4 items-center">
+  <!-- <header class="max-w-[1300px] mx-auto my-9 flex justify-between gap-4 items-center">
     <img src="./src/img/forest.svg" alt="Forest logo">
     <ul class="flex items-center gap-5">
       <li><a class="text-white text-[22px] relative hover:after:w-full hover:after:h-[2px] hover:after:absolute hover:after:bg-white hover:after:block block" href="#">Acomodações</a></li>
@@ -17,30 +17,30 @@
       <li><a class="text-white text-[22px] relative hover:after:w-full hover:after:h-[2px] hover:after:absolute hover:after:bg-white hover:after:block block" href="#">Experiências</a></li>
       <li><a class="text-white text-[22px] relative hover:after:w-full hover:after:h-[2px] hover:after:absolute hover:after:bg-white hover:after:block block" href="#">Contato</a></li>
     </ul>
-  </header>
+  </header> -->
   <main class="max-w-[1300px]  mx-auto my-14">
-    <div class="grid h-[730px]">
-      <video class="max-w-full z-[-2] mx-auto absolute left-0 right-0 px-5 rounded-[60px]" autoplay src="./src/img/video_sol.mp4">
+    <div class="grid h-[100vh]  relative px-14">
+      <video class=" z-[-2] mx-auto h-[100vh] object-cover  absolute left-0 right-0 px-5 rounded-[60px]" autoplay src="./src/img/video_sol.mp4">
       </video>
-      <div class="z-20 px-5 self-end">
-        <p class="bg-black/80 pl-5 pr-1 py-1 flex items-center  w-fit rounded-3xl text-white">vagas para dezembro abertas
-          <span class="bg-linear-to-b flex gap-2 from-green-400 to-green-500 px-3 py-2 rounded-full text-[#333]  cursor-pointer ml-4"> Reserve Hoje <img src="./src/img/seta.svg" alt="icone seta"> </span>
+      <div class="z-20  py-4 self-end">
+        <p class="bg-black/80 grid md:py-[6px] py-4 px-4 pl-2  pr-1  md:flex md:items-center  md:w-fit rounded-3xl text-white">vagas para dezembro abertas
+          <span class="bg-linear-to-b flex place-self-start gap-2 from-green-400 to-green-500 px-3 py-2 rounded-full text-[#333]  cursor-pointer mt-2 md:mt-0  md:ml-4"> Reserve Hoje <img src="./src/img/seta.svg" alt="icone seta"> </span>
         </p>
-        <h2 class="text-6xl my-8 text-white font-serif">Venha Experimentar<br> a Vida na Floresta</h2>
+        <h2 class="sm:text-6xl text-5xl my-8 text-white font-serif">Venha Experimentar<br> a Vida na Floresta</h2>
       </div>
-      <div class="flex items-center justify-between px-5 self-end">
-        <p class="text-white text-1xl">Melhores locais para visitar 2049</p>
-        <div class="px-5">
-          <h3 class="uppercase px-2 text-white">Recomendado por</h3>
+      <div class="md:flex md:items-center md:justify-between  self-end">
+        <p class="text-white text-1xl">Melhores locais para visitar <span class="underline">2049</span></p>
+        <div class="md:px-5">
+          <h3 class="uppercase md:px-2 text-white">Recomendado por</h3>
           <div class="my-3 flex items-center gap-2 divide-white divide-x-2">
-            <img class="px-2" src="./src/img/parceiros/wildbeast.svg" alt="Logo parceiros">
+            <img class="px-2 max-w-[150px] max-h-[150px]" src="./src/img/parceiros/wildbeast.svg" alt="Logo parceiros">
             <p class="text-[17px] text-white">Revista nacional</p>
           </div>
         </div>
       </div>
     </div>
   </main>
-  <section class="max-w-[1300px] mx-auto grid gap-6 grid-cols-2">
+  <section class="max-w-[1300px] mx-auto md:grid px-4 md:px-4 gap-6 grid-cols-2">
     <div class=" grid bg-[url(./img/padrao.svg)] bg-no-repeat bg-size-[500px] bg-end">
       <div class="self-end">
         <h2 class="text-white text-5xl font-serif">Refúgio Natural</h2>
@@ -54,29 +54,30 @@
       </div>
     </div>
     <div>
-      <ul class="grid grid-cols-3 gap-6">
-        <li class="col-start-1 grid relative col-end-4">
-          <img class="h-[150px] rounded-2xl w-full object-cover" src="./src/img/casa1.jpg" alt="Ruby">
-          <span class="uppercase block text-white bg-black/60 px-4 rounded-2xl py-1 mt-2 absolute place-self-end self-start mr-4 text-[14px]">Ruby</span>
+      <ul class="grid md:grid-cols-3 grid-cols-4 gap-6">
+        <li class="col-start-1 grid relative col-end-5">
+          <img class="md:h-[150px] h-[100px] rounded-2xl w-full object-cover" src="./src/img/casa1.jpg" alt="Ruby">
+          <span class="uppercase block text-white bg-black/60 px-4 rounded-2xl py-1 mt-2 absolute place-self-end self-start md:mr-4 mr-2 text-[14px]">Ruby</span>
         </li>
-        <li class="col-start-1 grid relative col-end-3"><img class=" rounded-2xl" src="./src/img/casa2.jpg" alt="Ruby">
-          <span class="uppercase block text-white bg-black/60 px-4 rounded-2xl py-1 mt-2 absolute place-self-end self-start mr-4 text-[14px]">Emerald</span>
+        <li class="col-start-1 col-end-3 grid relative md:col-end-3"><img class=" rounded-2xl" src="./src/img/casa2.jpg" alt="Ruby">
+          <span class="uppercase block text-white bg-black/60 px-4 rounded-2xl py-1 mt-2 absolute place-self-end self-start md:mr-4 mr-2 text-[14px]">Emerald</span>
         </li>
-        <li class="relative grid">
-          <img class="h-full rounded-2xl" src="./src/img/casa3.jpg" alt="Ruby">
-          <span class="uppercase block text-white bg-black/60 px-4 rounded-2xl py-1 mt-2 absolute place-self-end self-start mr-4 text-[14px]">Saphire</span>
+        <li class="relative grid col-end-5 col-start-3">
+          <img class="h-full rounded-2xl object-cover" src="./src/img/casa3.jpg" alt="Ruby">
+          <span class="uppercase block text-white bg-black/60 px-4 rounded-2xl py-1 mt-2 absolute place-self-end self-start md:mr-4 mr-2 text-[14px]">Saphire</span>
         </li>
       </ul>
     </div>
   </section>
+
   <article class="my-8  bg-green-800">
     <div class=" max-w-[1300px] py-8 mx-auto">
       <div class="my-4">
         <p class="text-green-400 uppercase text-center mb-4 pt-4">Conecte-se com a natureza</p>
-        <h2 class="text-6xl text-white font-serif text-center">Cada Som, Cada Momento,<br> Uma Nova Descoberta</h2>
+        <h2 class="md:text-6xl text-3xl text-white font-serif text-center">Cada Som, Cada Momento,<br> Uma Nova Descoberta</h2>
       </div>
-      <div class="flex gap-10 my-8 *:flex-[1] justify-center">
-        <div class="bg-green-700 px-8 py-6 rounded-2xl">
+      <div class="grid px-4 grid-cols-[repeat(3,minmax(250px,1fr))] md:w-full gap-4 w-[400px]  overflow-x-auto ">
+        <div class="bg-green-700 flex flex-col justify-between px-8 py-6 rounded-2xl">
           <h3 class="text-[26px] text-green-400 font-serif">Lua nova</h3>
           <div class="my-5">
             <p class="font-serif text-5xl text-white">23</p>
@@ -85,9 +86,9 @@
           <div class="text-white">
             <p class="max-w-[35ch] text-[#ccc] text-[17px]">Melhor período para observação astronômica. O Céu estará<br> claro e as estrelas visíveis.</p>
           </div>
-          <a class="bg-linear-to-b inline-block gap-2 mt-5 from-green-400 to-green-500 px-6 py-2 rounded-full text-[#000]  cursor-pointer " href="#">Reservar 23/03</a>
+          <a class="bg-linear-to-b grid self-start place-self-start  gap-2 mt-5 from-green-400 to-green-500 px-6 py-2 rounded-full text-[#000]  cursor-pointer " href="#">Reservar 23/03</a>
         </div>
-        <div class="bg-green-700 px-8 py-6 rounded-2xl">
+        <div class="bg-green-700 flex flex-col justify-between px-8 py-6 rounded-2xl">
           <h3 class="text-[26px] text-green-400 font-serif">Aurora Boreal</h3>
           <div class="my-5">
             <p class="font-serif text-5xl text-white">15</p>
@@ -96,9 +97,9 @@
           <div class="text-white">
             <p class="max-w-[35ch] text-[#ccc] text-[17px]">Melhor período para observação da Aurora Boreal, o céu estará iluminado pelas estrelas.</p>
           </div>
-          <a class="bg-linear-to-b inline-block gap-2 mt-5 from-green-400 to-green-500 px-6 py-2 rounded-full text-[#000]  cursor-pointer " href="#">Reservar 15/04</a>
+          <a class="bg-linear-to-b inline-block self-start place-self-start gap-2 mt-5 from-green-400 to-green-500 px-6 py-2 rounded-full text-[#000]  cursor-pointer " href="#">Reservar 15/04</a>
         </div>
-        <div class="bg-green-700 px-8 py-6 rounded-2xl">
+        <div class="bg-green-700 px-8 flex flex-col justify-between py-6 rounded-2xl">
           <h3 class="text-[26px] text-green-400 font-serif">Chuva de Meteoros</h3>
           <div class="my-5">
             <p class="font-serif text-5xl text-white">18</p>
@@ -107,13 +108,14 @@
           <div class="text-white">
             <p class="max-w-[35ch] text-[#ccc] text-[17px]">Melhor período para observação da Chuva de Meteoros, o céu estará iluminado pelas estrelas.</p>
           </div>
-          <a class="bg-linear-to-b inline-block gap-2 mt-5 from-green-400 to-green-500 px-6 py-2 rounded-full text-[#000]  cursor-pointer " href="#">Reservar 18/08</a>
+          <a class="bg-linear-to-b inline-block place-self-start gap-2 mt-5 from-green-400 to-green-500 px-6 py-2 rounded-full text-[#000]  cursor-pointer " href="#">Reservar 18/08</a>
         </div>
       </div>
     </div>
   </article>
-  <article class="mx-auto grid grid-cols-2 gap-8 max-w-[1300px]">
-    <div class="bg-green-800 px-8 py-4 rounded-2xl">
+
+  <article class="mx-auto md:grid px-4 grid-cols-2 gap-8 max-w-[1300px]">
+    <div class="bg-green-800 mb-8 px-8 py-4 rounded-2xl">
       <p class="text-green-400 uppercase mb-4 pt-4">Conecte-se com a natureza</p>
       <h2 class="text-white font-serif text-5xl">Escolha sua <br>próxima aventura</h2>
       <ul class="my-6 *:my-8 ">
@@ -153,33 +155,35 @@
       </ul>
     </div>
   </article>
-  <section class="max-w-[1300px] mx-auto bg-[url(./img/padrao.svg)] bg-no-repeat  bg-center bg-size-[500px]">
+
+  <section class="max-w-[1300px] px-4 mx-auto bg-[url(./img/padrao.svg)] bg-no-repeat  bg-center bg-size-[500px]">
     <div class="text-center  my-10">
       <p class="text-green-400 uppercase mb-4 pt-4">Conecte-se com a natureza</p>
-      <h2 class="text-white text-6xl font-serif">Ritmo da Floresta</h2>
+      <h2 class="text-white md:text-6xl text-5xl font-serif">Ritmo da Floresta</h2>
     </div>
-    <div class="flex items-center my-10 *:rounded-2xl gap-8 justify-center *:flex-[1]">
-      <div class="bg-green-800 px-6 py-8 hover:-translate-y-8 self-start transition-transform">
+    <div class="md:flex items-center my-10 *:rounded-2xl gap-8 justify-center *:flex-[1]">
+      <div class="bg-green-800 px-6 py-8 md:hover:-translate-y-8 self-start transition-transform">
         <img class="bg-linear-to-b inline-block gap-2 mt-5 from-green-400 to-green-500 p-2 rounded-full" src="./src/img/manha.svg" alt="icone do sol nascendo">
         <h3 class="text-white font-serif text-2xl my-5">Amanhacer</h3>
         <p class="text-[#ccc]">Desperte com o canto dos pássaros e participe das nossas caminhadas ao ar livre.</p>
-        <p class="text-green-400 uppercase mb-4 text-[18px] pt-4">05:40 - 07:00</p>
+        <p class="text-green-400 uppercase mb-4 text-[22px] pt-4">05:40 - 07:00</p>
       </div>
-      <div class="bg-green-800 px-6 py-8 mt-18 hover:-translate-y-8 transition-transform">
+      <div class="bg-green-800 px-6 py-8 md:mt-18 my-4 md:hover:-translate-y-8 transition-transform">
         <img class="bg-linear-to-b inline-block gap-2 mt-5 from-green-400 to-green-500 p-2 rounded-full" src="./src/img/dia.svg" alt="icone do sol ">
         <h3 class="text-white font-serif text-2xl my-5">Meio-dia</h3>
         <p class="text-[#ccc]">Explore nossas trilhas sombreadas e desfrute de um piquenique gourmet na natureza.</p>
-        <p class="text-green-400 uppercase mb-4 text-[18px] pt-4">12:00 - 14:00</p>
+        <p class="text-green-400 uppercase mb-4 text-[22px] pt-4">12:00 - 14:00</p>
       </div>
-      <div class="bg-green-800 px-6 py-8 transition-transform hover:-translate-y-8 self-start ">
+      <div class="bg-green-800 px-6 py-8 transition-transform md:hover:-translate-y-8 self-start ">
         <img class="bg-linear-to-b inline-block gap-2 mt-5 from-green-400 to-green-500 p-2 rounded-full" src="./src/img/noite.svg" alt="icone do sol nascendo">
         <h3 class="text-white font-serif text-2xl my-5">Anoitecer</h3>
         <p class="text-[#ccc] max-w-[30ch]">Termine seu dia com nossa sessão de observação de estrelas.</p>
-        <p class="text-green-400 uppercase mb-4 text-[18px] pt-4">19:00 - 21:00</p>
+        <p class="text-green-400 uppercase mb-4 text-[22px] pt-4">19:00 - 21:00</p>
       </div>
     </div>
   </section>
-  <article class="max-w-[1300px] mx-auto my-12 grid grid-cols-2">
+
+  <article class="max-w-[1300px] px-4 mx-auto my-12 md:grid grid-cols-2">
     <div>
       <h2 class="text-green-400 text-3xl font-serif">Nosso contato</h2>
       <p class="text-white mt-2">Tem interesse em passar uma temporada na Forest? <br>Entre em contato com a gente por telefone ou email.</p>
@@ -204,7 +208,7 @@
         <label class="text-white" for="email">Nome</label>
         <input class="bg-green-700 w-full py-[12px] text-white focus:outline-2 focus:outline-green-500 rounded-[7px] my-2 px-4 block" type="email" name="email" id="email">
       </div>
-      <div class="flex gap-4 max-w-[800px]">
+      <div class="md:flex gap-4 max-w-[800px]">
         <div class="w-full">
           <label class="text-white" for="nome">Email</label>
           <input class="bg-green-700 w-full py-[12px] text-white focus:outline-2 focus:outline-green-500 rounded-[7px] my-2 px-4 block" type="text" name="nome" id="nome">
@@ -221,19 +225,21 @@
       <button class="bg-linear-to-b flex gap-2 from-green-400 to-green-500 px-6 mt-4 py-2 rounded-full text-[#333]  cursor-pointer">Enviar email</button>
     </form>
   </article>
-  <section class="max-w-[1300px] mx-auto my-10">
-    <ul class="flex gap-12 justify-center item-center border-y-2 border-y-green-800 py-10">
-      <li><img src="./src/img/parceiros/caravan.svg" alt="Logo caravan"></li>
-      <li><img src="./src/img/parceiros/dogs.svg" alt="Logo dogs"></li>
-      <li><img src="./src/img/parceiros/wildbeast.svg" alt="Logo wildbeast"></li>
-      <li><img src="./src/img/parceiros/lescone.svg" alt="Logo lescone"></li>
-      <li><img src="./src/img/parceiros/surfbot.svg" alt="Logo surfbot"></li>
+
+  <section class="max-w-[1300px] px-4 mx-auto my-10">
+    <ul class="md:flex gap-12   *:py-8 *:block md:*:divide-green-700 md:divide-y-2  justify-center item-center border-y-2 border-y-green-800 py-10">
+      <li><img class="block mx-auto" src="./src/img/parceiros/caravan.svg" alt="Logo caravan"></li>
+      <li><img class="block mx-auto" src="./src/img/parceiros/dogs.svg" alt="Logo dogs"></li>
+      <li><img class="block mx-auto" src="./src/img/parceiros/wildbeast.svg" alt="Logo wildbeast"></li>
+      <li><img class="block mx-auto" src="./src/img/parceiros/lescone.svg" alt="Logo lescone"></li>
+      <li><img class="block mx-auto" src="./src/img/parceiros/surfbot.svg" alt="Logo surfbot"></li>
     </ul>
   </section>
-  <footer class="max-w-[1300px] mx-auto">
-    <div class="flex justify-between bg-green-800 rounded-2xl p-8 items-start">
-      <div class="flex gap-12">
-        <div>
+
+  <footer class="max-w-[1300px] mx-auto px-4">
+    <div class="md:flex gap-y-10 justify-between bg-green-800 rounded-2xl p-8 items-start">
+      <div class="md:flex gap-12">
+        <div class="mb-8">
           <h2 class="text-white text-2xl font-serif">Endereço</h2>
           <ul class="*:text-[#ccc] my-2">
             <li>Rua da Mata, 123</li>
@@ -249,17 +255,17 @@
           </ul>
         </div>
       </div>
-      <div>
+      <div class="mt-8 md:mt-0">
         <img src="./src/img/forest.svg" alt="Logo forest" </div>
         <p class="text-[#ccc] mt-4 text-[18px]">Conecte-se com a natureza</p>
       </div>
   </footer>
-  <div class="max-w-[1300px] my-4 flex justify-between mx-auto">
+  <div class="max-w-[1300px] my-4 md:flex px-4  justify-between mx-auto">
     <p class="text-[#ccc]">© 2024 Forest. Todos os direitos reservados.</p>
-    <ul class="flex items-center gap-4 *:text-[#ccc] *:hover:text-green-400">
-      <li>Instagram</li>
-      <li>Linkedin</li>
-      <li>Facebook</li>
+    <ul class="flex items-center gap-4 *:text-[#ccc] *:my-4 *:hover:text-green-400">
+      <li class="cursor-pointer">Instagram</li>
+      <li class="cursor-pointer">Linkedin</li>
+      <li class="cursor-pointer">Facebook</li>
     </ul>
   </div>
 </body>
