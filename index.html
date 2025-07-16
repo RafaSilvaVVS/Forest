@@ -8,19 +8,30 @@
   <title>Forest</title>
 </head>
 
-<body class="bg-green-700">
-  <!-- <header class="max-w-[1300px] mx-auto my-9 flex justify-between gap-4 items-center">
+<body class="bg-green-700 ">
+  <div data-container>
+    <div data-menu class="bg-gray-400/80 backdrop-blur-sm  size-full grid invisible fixed top-0 left-0 z-30">
+      <ul class="flex flex-col  place-self-center items-center gap-5">
+        <li><a class="text-white text-[28px] relative hover:after:w-full hover:after:h-[2px] hover:after:absolute hover:after:bg-white hover:after:block block" href="#">Acomodações</a></li>
+        <li><a class="text-white text-[28px] relative hover:after:w-full hover:after:h-[2px] hover:after:absolute hover:after:bg-white hover:after:block block" href="#">Eventos</a></li>
+        <li><a class="text-white text-[28px] relative hover:after:w-full hover:after:h-[2px] hover:after:absolute hover:after:bg-white hover:after:block block" href="#">Experiências</a></li>
+        <li><a class="text-white text-[28px] relative hover:after:w-full hover:after:h-[2px] hover:after:absolute hover:after:bg-white hover:after:block block" href="#">Contato</a></li>
+      </ul>
+    </div>
+  </div>
+  <header class="max-w-[1300px] px-4 mx-auto my-9 flex justify-between gap-4 items-center">
     <img src="./src/img/forest.svg" alt="Forest logo">
-    <ul class="flex items-center gap-5">
+    <button data-btn-menu class="md:invisible flex items-center gap-2 bg-linear-to-b px-4 rounded-full py-2 from-green-400 to-green-500 after:block after:bg-black after:w-8 after:h-[3px] after:shadow-black after:shadow-[0px_10px_0px_0.002rem,0px_-10px_0px_0.002rem]">Menu</button>
+    <ul class=" items-center hidden md:flex gap-5">
       <li><a class="text-white text-[22px] relative hover:after:w-full hover:after:h-[2px] hover:after:absolute hover:after:bg-white hover:after:block block" href="#">Acomodações</a></li>
       <li><a class="text-white text-[22px] relative hover:after:w-full hover:after:h-[2px] hover:after:absolute hover:after:bg-white hover:after:block block" href="#">Eventos</a></li>
       <li><a class="text-white text-[22px] relative hover:after:w-full hover:after:h-[2px] hover:after:absolute hover:after:bg-white hover:after:block block" href="#">Experiências</a></li>
       <li><a class="text-white text-[22px] relative hover:after:w-full hover:after:h-[2px] hover:after:absolute hover:after:bg-white hover:after:block block" href="#">Contato</a></li>
     </ul>
-  </header> -->
-  <main class="max-w-[1300px]  mx-auto my-14">
-    <div class="grid h-[100vh]  relative px-14">
-      <video class=" z-[-2] mx-auto h-[100vh] object-cover  absolute left-0 right-0 px-5 rounded-[60px]" autoplay src="./src/img/video_sol.mp4">
+  </header>
+  <main class="max-w-[1300px] px-4 mx-auto my-14">
+    <div class="grid h-[100vh]  relative px-8">
+      <video class=" z-[-2] mx-auto size-full sizw-f h-[100vh] object-cover  absolute left-0 right-0 rounded-[60px]" autoplay src="./src/img/video_sol.mp4">
       </video>
       <div class="z-20  py-4 self-end">
         <p class="bg-black/80 grid md:py-[6px] py-4 px-4 pl-2  pr-1  md:flex md:items-center  md:w-fit rounded-3xl text-white">vagas para dezembro abertas
@@ -268,6 +279,7 @@
       <li class="cursor-pointer">Facebook</li>
     </ul>
   </div>
+  <script src="./src/menuMobile.js"></script>
 </body>
 
 </html>
