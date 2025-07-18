@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 
 <head>
   <meta charset="UTF-8">
@@ -18,16 +18,16 @@
   <div data-container>
     <div data-menu class="bg-gray-400/80 backdrop-blur-sm  size-full grid invisible fixed top-0 left-0 z-30">
       <ul class="flex flex-col  place-self-center items-center gap-5">
-        <li><a class="text-white text-[28px] relative hover:after:w-full hover:after:h-[2px] hover:after:absolute hover:after:bg-white hover:after:block block" href="#">Acomodações</a></li>
-        <li><a class="text-white text-[28px] relative hover:after:w-full hover:after:h-[2px] hover:after:absolute hover:after:bg-white hover:after:block block" href="#">Eventos</a></li>
-        <li><a class="text-white text-[28px] relative hover:after:w-full hover:after:h-[2px] hover:after:absolute hover:after:bg-white hover:after:block block" href="#">Experiências</a></li>
-        <li><a class="text-white text-[28px] relative hover:after:w-full hover:after:h-[2px] hover:after:absolute hover:after:bg-white hover:after:block block" href="#">Contato</a></li>
+        <li><a aria-label="clicar no link leva focus:border-2 focus:border-red-500 para Acomodações" class="text-white text-[28px] relative hover:after:w-full hover:after:h-[2px] hover:after:absolute hover:after:bg-white hover:after:block block" href="#">Acomodações</a></li>
+        <li><a aria-label="clicar no link leva focus:border-2 focus:border-red-500 para Eventos" class="text-white text-[28px] relative hover:after:w-full hover:after:h-[2px] hover:after:absolute hover:after:bg-white hover:after:block block" href="#">Eventos</a></li>
+        <li><a aria-label="clicar no link leva focus:border-2 focus:border-red-500 para Experiências" class="text-white text-[28px] relative hover:after:w-full hover:after:h-[2px] hover:after:absolute hover:after:bg-white hover:after:block block" href="#">Experiências</a></li>
+        <li><a aria-label="clicar no link leva focus:border-2 focus:border-red-500 para Contato" class="text-white text-[28px] relative hover:after:w-full hover:after:h-[2px] hover:after:absolute hover:after:bg-white hover:after:block block" href="#">Contato</a></li>
       </ul>
     </div>
   </div>
   <header class="max-w-[1300px] px-4 mx-auto my-9 flex justify-between gap-4 items-center">
     <img src="./src/img/forest.svg" alt="Forest logo">
-    <button data-btn-menu class="md:invisible flex items-center gap-2 bg-linear-to-b px-4 rounded-full py-2 from-green-400 to-green-500 after:block after:bg-black after:w-8 after:h-[3px] after:shadow-black after:shadow-[0px_10px_0px_0.002rem,0px_-10px_0px_0.002rem]">Menu</button>
+    <button aria-label="menu" data-btn-menu class="md:invisible flex items-center gap-2 bg-linear-to-b px-4 rounded-full py-2 from-green-400 to-green-500 after:block after:bg-black after:w-8 after:h-[3px] after:shadow-black after:shadow-[0px_10px_0px_0.002rem,0px_-10px_0px_0.002rem]">Menu</button>
     <ul class=" items-center hidden md:flex gap-5">
       <li><a class="text-white text-[22px] relative hover:after:w-full hover:after:h-[2px] hover:after:absolute hover:after:bg-white hover:after:block block" href="#">Acomodações</a></li>
       <li><a class="text-white text-[22px] relative hover:after:w-full hover:after:h-[2px] hover:after:absolute hover:after:bg-white hover:after:block block" href="#">Eventos</a></li>
@@ -41,7 +41,7 @@
       </video>
       <div class="z-20  py-4 self-end">
         <p class="bg-black/80 grid md:py-[6px] py-4 px-4 pl-2  pr-1  md:flex md:items-center  md:w-fit rounded-3xl text-white">vagas para dezembro abertas
-          <span class="bg-linear-to-b flex place-self-start gap-2 from-green-400 to-green-500 px-3 py-2 rounded-full text-[#333]  cursor-pointer mt-2 md:mt-0  md:ml-4"> Reserve Hoje <img src="./src/img/seta.svg" alt="icone seta"> </span>
+          <a href="Reservar" class="bg-linear-to-b flex place-self-start gap-2 from-green-400 to-green-500 px-3 py-2 rounded-full text-[#333]  cursor-pointer mt-2 md:mt-0  md:ml-4"> Reserve Hoje <img src="./src/img/seta.svg" alt="icone seta"> </a>
         </p>
         <h2 class="sm:text-6xl text-5xl my-8 text-white font-serif">Venha Experimentar<br> a Vida na Floresta</h2>
       </div>
@@ -50,7 +50,7 @@
         <div class="md:px-5">
           <h3 class="uppercase md:px-2 text-white">Recomendado por</h3>
           <div class="my-3 flex items-center gap-2 divide-white divide-x-2">
-            <img class="px-2 max-w-[150px] max-h-[150px]" src="./src/img/parceiros/wildbeast.svg" alt="Logo parceiros">
+            <img class="px-2 max-w-[150px] max-h-[150px]" src="./src/img/parceiros/wildbeast.svg" alt="Logo wildbeast">
             <p class="text-[17px] text-white">Revista nacional</p>
           </div>
         </div>
@@ -73,14 +73,14 @@
     <div>
       <ul class="grid md:grid-cols-3 grid-cols-4 gap-6">
         <li class="col-start-1 grid relative col-end-5">
-          <img class="md:h-[150px] h-[100px] rounded-2xl w-full object-cover" src="./src/img/casa1.jpg" alt="Ruby">
+          <img class="md:h-[150px] h-[100px] rounded-2xl w-full object-cover" src="./src/img/casa1.jpg" alt="Foto de uma cabana na floresta">
           <span class="uppercase block text-white bg-black/60 px-4 rounded-2xl py-1 mt-2 absolute place-self-end self-start md:mr-4 mr-2 text-[14px]">Ruby</span>
         </li>
-        <li class="col-start-1 col-end-3 grid relative md:col-end-3"><img class=" rounded-2xl" src="./src/img/casa2.jpg" alt="Ruby">
+        <li class="col-start-1 col-end-3 grid relative md:col-end-3"><img class=" rounded-2xl" src="./src/img/casa2.jpg" alt="foto do interior de uma cabana">
           <span class="uppercase block text-white bg-black/60 px-4 rounded-2xl py-1 mt-2 absolute place-self-end self-start md:mr-4 mr-2 text-[14px]">Emerald</span>
         </li>
         <li class="relative grid col-end-5 col-start-3">
-          <img class="h-full rounded-2xl object-cover" src="./src/img/casa3.jpg" alt="Ruby">
+          <img class="h-full rounded-2xl object-cover" src="./src/img/casa3.jpg" alt="foto de uma cabana">
           <span class="uppercase block text-white bg-black/60 px-4 rounded-2xl py-1 mt-2 absolute place-self-end self-start md:mr-4 mr-2 text-[14px]">Saphire</span>
         </li>
       </ul>
@@ -93,7 +93,7 @@
         <p class="text-green-400 uppercase text-center mb-4 pt-4">Conecte-se com a natureza</p>
         <h2 class="md:text-6xl text-3xl text-white font-serif text-center">Cada Som, Cada Momento,<br> Uma Nova Descoberta</h2>
       </div>
-      <div class="grid px-4 grid-cols-[repeat(3,minmax(250px,1fr))] md:w-full gap-4 w-[400px]  overflow-x-auto ">
+      <div class="grid px-4 grid-cols-[repeat(3,minmax(250px,1fr))] md:w-full gap-4 w-[500px] mx-auto  overflow-x-auto md:overflow-auto ">
         <div class="bg-green-700 flex flex-col justify-between px-8 py-6 rounded-2xl">
           <h3 class="text-[26px] text-green-400 font-serif">Lua nova</h3>
           <div class="my-5">
@@ -132,7 +132,7 @@
   </article>
 
   <article class="mx-auto md:grid px-4 grid-cols-2 gap-8 max-w-[1300px]">
-    <div class="bg-green-800 mb-8 px-8 py-4 rounded-2xl">
+    <div class="bg-green-800 md:mb-0 mb-8 px-8 py-4 rounded-2xl">
       <p class="text-green-400 uppercase mb-4 pt-4">Conecte-se com a natureza</p>
       <h2 class="text-white font-serif text-5xl">Escolha sua <br>próxima aventura</h2>
       <ul class="my-6 *:my-8 ">
@@ -152,21 +152,19 @@
     </div>
     <div>
       <ul class="grid grid-cols-2 gap-4">
-        <div>
-          <li class=" mb-4 relative grid overflow-hidden rounded-2xl h-fit group">
-            <img class="rounded-2xl size-full object-cover group-hover:scale-110" src="./src/img/canoagem.jpg" alt="Canoagem">
-            <span class="absolute grid invisible group-hover:visible p-4 self-end text-white text-[20px] z-20">Canoagem</span>
-            <div class="absolute w-full invisible group-hover:visible bg-linear-to-b from-black/30 to-black/80 h-full grid top-0 rounded-2xl"></div>
-          </li>
-          <li class=" relative grid overflow-hidden rounded-2xl h-fit group">
-            <img class="rounded-2xl size-full object-cover group-hover:scale-110" src="./src/img/vida-selvagem.jpg" alt="vida selvagem">
-            <span class="absolute z-20 invisible group-hover:visible grid p-4 self-end text-white text-[20px]">Vida selvagem</span>
-            <div class="absolute w-full invisible group-hover:visible bg-linear-to-b from-black/30 to-black/80 h-full grid top-0 rounded-2xl"></div>
-          </li>
-        </div>
-        <li class=" relative grid overflow-hidden h-full rounded-2xl  group">
-          <img class="rounded-2xl size-full object-cover group-hover:scale-110 h-full" src=" ./src/img/observacao-noturna.jpg" alt="aurora boreal">
+        <li class=" mb-4 relative grid h-full overflow-hidden rounded-2xl  group">
+          <img class="rounded-2xl size-full object-cover group-hover:scale-110" src="./src/img/canoagem.jpg" alt="Canoagem">
+          <span class="absolute grid invisible group-hover:visible p-4 self-end text-white text-[20px] z-20">Canoagem</span>
+          <div class="absolute w-full invisible group-hover:visible bg-linear-to-b from-black/30 to-black/80 h-full grid top-0 rounded-2xl"></div>
+        </li>
+        <li class="row-span-2  relative grid overflow-hidden  rounded-2xl  group">
+          <img class="rounded-2xl size-full h-[100vh] object-cover group-hover:scale-110 h-full" src=" ./src/img/observacao-noturna.jpg" alt="aurora boreal">
           <span class="absolute invisible group-hover:visible z-20 grid p-4 self-end text-white text-[20px]">Observação Noturna</span>
+          <div class="absolute w-full invisible group-hover:visible bg-linear-to-b from-black/30 to-black/80 h-full grid top-0 rounded-2xl"></div>
+        </li>
+        <li class=" relative grid overflow-hidden rounded-2xl h-full group">
+          <img class="rounded-2xl size-full object-cover group-hover:scale-110" src="./src/img/vida-selvagem.jpg" alt="vida selvagem">
+          <span class="absolute z-20 invisible group-hover:visible grid p-4 self-end text-white text-[20px]">Vida selvagem</span>
           <div class="absolute w-full invisible group-hover:visible bg-linear-to-b from-black/30 to-black/80 h-full grid top-0 rounded-2xl"></div>
         </li>
       </ul>
@@ -222,24 +220,24 @@
     </div>
     <form class="bg-green-800 rounded-2xl px-8 py-8" action="POST">
       <div>
-        <label class="text-white" for="email">Nome</label>
-        <input class="bg-green-700 w-full py-[12px] text-white focus:outline-2 focus:outline-green-500 rounded-[7px] my-2 px-4 block" type="email" name="email" id="email">
+        <label class="text-white" for="email">Nome: </label>
+        <input aria-label="Email" class="bg-green-700 w-full py-[12px] text-white focus:outline-2 focus:outline-green-500 rounded-[7px] my-2 px-4 block" type="email" name="email" id="email">
       </div>
       <div class="md:flex gap-4 max-w-[800px]">
         <div class="w-full">
-          <label class="text-white" for="nome">Email</label>
-          <input class="bg-green-700 w-full py-[12px] text-white focus:outline-2 focus:outline-green-500 rounded-[7px] my-2 px-4 block" type="text" name="nome" id="nome">
+          <label class="text-white" for="nome">Email: </label>
+          <input aria-label="nome" class="bg-green-700 w-full py-[12px] text-white focus:outline-2 focus:outline-green-500 rounded-[7px] my-2 px-4 block" type="text" name="nome" id="nome">
         </div>
         <div class="w-full">
-          <label class="text-white" for="telefone">Telefone</label>
-          <input placeholder="(21) 99999-9999" class="bg-green-700 placeholder:text-green-800 w-full py-[12px] text-white focus:outline-2 focus:outline-green-500 rounded-[7px] my-2 px-4 block" type="text" name="telefone" id="telefone">
+          <label class="text-white" for="telefone">Telefone: </label>
+          <input aria-label="telefone" placeholder="(21) 99999-9999" class="bg-green-700 placeholder:text-green-800 w-full py-[12px] text-white focus:outline-2 focus:outline-green-500 rounded-[7px] my-2 px-4 block" type="text" name="telefone" id="telefone">
         </div>
       </div>
       <div>
-        <label class="text-white" for="mensagem">Mensagem</label>
-        <textarea class="block resize-none text-white bg-green-700 py-[12px] w-full rounded-[7px] my-2 px-4 focus:outline-2 focus:outline-green-500" name="mensagem" rows="5" id="mensagem"></textarea>
+        <label class="text-white" for="mensagem">Mensagem: </label>
+        <textarea title="mensagem" aria-label="mensagem" class="block resize-none text-white bg-green-700 py-[12px] w-full rounded-[7px] my-2 px-4 focus:outline-2 focus:outline-green-500" name="mensagem" rows="5" id="mensagem"></textarea>
       </div>
-      <button class="bg-linear-to-b flex gap-2 from-green-400 to-green-500 px-6 mt-4 py-2 rounded-full text-[#333]  cursor-pointer">Enviar email</button>
+      <button aria-label="enviarDados" class="bg-linear-to-b flex gap-2 from-green-400 to-green-500 px-6 mt-4 py-2 rounded-full text-[#333]  cursor-pointer">Enviar email</button>
     </form>
   </article>
 
